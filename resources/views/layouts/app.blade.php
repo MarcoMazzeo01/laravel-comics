@@ -15,7 +15,9 @@
 </head>
 
 <body>
-  <header>Questo è un header</header>
+  <header>
+    @include('partials._navbar')
+  </header>
   <main>@yield('main-content')</main>
   <footer>Questo è un footer</footer>
 </body>
