@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('page-title')
-    Home 
-@endsection
+@section('page-title', 'Homepage')
+
 
 @section('main-content')
     TEST
