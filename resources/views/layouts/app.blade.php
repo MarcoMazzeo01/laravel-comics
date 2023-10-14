@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel Comics - @yield('page-title')</title>
+  <title>{{ env('APP_NAME') }} - @yield('page-title')</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,10 +15,15 @@
 </head>
 
 <body>
-  <header>
+  <header class='mb-5'>
     @include('partials._navbar')
   </header>
-  <main>@yield('main-content')</main>
+
+  <main class='mb-5'>
+    <div class="container">
+      @yield('main-content')
+    </div>
+  </main>
   <footer>Questo è un footer</footer>
 </body>
 
